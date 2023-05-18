@@ -20,7 +20,6 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut, cupiditate dolores
                     ducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
                 </h2>
-                <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
                 <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
                 <a href='/about'>Click Here</a>
                 <div class='arrow'>→</div>
@@ -95,16 +94,16 @@
         margin-left: 0.50rem;
     }
     .apps {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
     }
     .app {
-   border: 1px solid #ddd;
-   padding: 10px;
-   box-shadow: 0 0 10px #eee;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 0 10px #eee;
     }
     .link {
-    color: rgb(10, 10, 139);
+        color: rgb(10, 10, 139);
     }
  </style>
