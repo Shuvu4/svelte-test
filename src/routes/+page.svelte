@@ -75,61 +75,52 @@
 </script>
 
 <style>
-    .info {
-        text-align: center;
-        position: relative;
-}
-    .info-container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-        align-items: start;
-}
-    .container {
-        max-width: 1400px;
-        margin: 190px 0 0 2.5rem;
-}
+    body {
+      background-position: left top;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-repeat: no-repeat;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 80px 0 80px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: -1em 0;
+    flex: 1 0 auto;
+  }
+  .nav-links .link {
+    position: relative;
+    margin: 1em;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: black;
+  }
 
-    .info h1 {
-        font-size: 4rem;
-        margin: 0;
-}
-    .info h1 p {
-        position: relative;
-        font: inherit;
-        margin: 0;
-        text-align: left;
-        line-height: 130%;
-        width: fit-content;
-        font-weight: 800;
-        letter-spacing: -0.03em;
-}
-    .info h2 {
-        max-width: 65ch;
-        font-weight: 200;
-        margin-top: 0.50rem;
-}
-    .background-div {
-        background-color: #ecebe8;
-        width: 100%;
-        height: 56vh;
-        margin: -205px auto;
-}
-    .info .info-text {
-        position: relative;
-}
-    .scroll-button {
-        display: flex;
-        border: none;
-        outline: none;
-        cursor: pointer;
-}
-    .scroll-button .arrow {
-        margin-left: 0.50rem;
-}
+  .nav-logo {
+    position: relative;
+    line-height: 1;
+    font-size: 1.1rem;
+    color: black;
+  }
 </style>
-
-
-
