@@ -1,3 +1,7 @@
+<svelte:head>
+ <title>Портфолио</title>
+</svelte:head>
+
 <script>
 import Icon from '../../../../components/Icon.svelte';
 let newItem = '';
@@ -49,21 +53,42 @@ function complete(index) {
 
 
 <style>
-    main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100%;
-  padding: 5vmin;
-  box-sizing: border-box;
-  background: antiquewhite;
+  .container {
+   margin: 50px auto;
+   max-width: 800px;
+   padding: 0 20px;
+  }
+
+  .apps {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 20px;
+  }
+  .app {
+   border: 1px solid #ddd;
+   padding: 10px;
+   box-shadow: 0 0 10px #eee;
+  }
+
+  .link {
+   color: rgb(10, 10, 139);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    padding: 5vmin;
+    box-sizing: border-box;
+    background: antiquewhite;
 }
-form {
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+  form {
+      width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 input {
