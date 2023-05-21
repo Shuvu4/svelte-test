@@ -34,21 +34,21 @@ function complete(index) {
         <input bind:value={newItem} placeholder="Enter to-do" />
         <button class="add-todo" on:click={add}><span>+</span></button>
       </form>
+
       <div class="todos">
-        {#each todoList as item, index}
-        <div class="todo" class:completed={item.completed}>
-          <span class="todo__text">{item.task}</span>
-          <div class="todo__buttons">
-            <button class="complete" on:click={() => complete(index)}>
-              <Icon name="check-mark" />
-            </button>
-            <button class="delete" on:click={() => remove(index)}>
-              <Icon name="delete" />
-            </button>
-          </div>
-        </div>
-        {/each}
-      </div>    
+    {#each todoList as item, index}
+     <span class="todo__text">{item.task}</span>
+     <div class="todo__buttons">
+      <button class="complete" on:click={() => complete(index)}>
+        <Icon name="check-mark" />
+      </button>
+      <button class="delete" on:click={() => remove(index)}>
+        <Icon name="delete" />
+      </button>
+</div>
+    {/each}
+</div>
+ 
 </main>
 
 
@@ -75,20 +75,20 @@ function complete(index) {
   }
 
   main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100%;
-    padding: 5vmin;
-    box-sizing: border-box;
-    background: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  padding: 5vmin;
+  box-sizing: border-box;
+  background: antiquewhite;
 }
-  form {
-      width: 100%;
-    max-width: 500px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 input {
