@@ -1,5 +1,5 @@
 <svelte:head>
- <title>Портфолио</title>
+  <title>Портфолио</title>
 </svelte:head>
 
 <script>
@@ -27,18 +27,17 @@ function complete(index) {
 }
 </script>
 
-
 <main>
     <h1>My to-do list</h1>
     <form on:submit|preventDefault={add}>
         <input bind:value={newItem} placeholder="Enter to-do" />
         <button class="add-todo" on:click={add}><span>+</span></button>
-      </form>
+    </form>
 
       <div class="todos">
     {#each todoList as item, index}
-     <span class="todo__text">{item.task}</span>
-     <div class="todo__buttons">
+    <span class="todo__text">{item.task}</span>
+    <div class="todo__buttons">
       <button class="complete" on:click={() => complete(index)}>
         <Icon name="check-mark" />
       </button>
@@ -50,7 +49,6 @@ function complete(index) {
 </div>
  
 </main>
-
 
 <style>
   .container {
@@ -118,11 +116,13 @@ input {
   justify-content: space-between;
   align-items: center;
 }
+
 .todo__buttons {
   display: flex;
   align-items: center;
   margin-left: 1rem;
 }
+
 .todo button {
   width: 32px;
   height: 32px;
@@ -145,11 +145,13 @@ button.delete:hover {
   color: brown;
   transition: color 100ms ease-out;
 }
+
 button.complete,
 button.complete:hover {
   color: cadetblue;
   transition: color 100ms ease-out;
 }
+
 .todo.completed {
   color: slategray;
 }
