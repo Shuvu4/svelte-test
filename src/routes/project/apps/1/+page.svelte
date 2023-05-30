@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Мой список дел</h1>
 <main>
     <form on:submit|preventDefault={add}>
@@ -21,6 +22,11 @@
         {/each}
     </div>
 </main>
+=======
+<svelte:head>
+  <title>Портфолио</title>
+</svelte:head>
+>>>>>>> 7bcdc2fafcefbf18c6f8c4bcb113178e9e3c26f1
 
 <script>
 import Icon from '../../../../components/Icon.svelte'
@@ -50,6 +56,32 @@ function complete(index) {
 }
 </script>
 
+<<<<<<< HEAD
+=======
+<main>
+    <h1>My to-do list</h1>
+    <form on:submit|preventDefault={add}>
+        <input bind:value={newItem} placeholder="Enter to-do" />
+        <button class="add-todo" on:click={add}><span>+</span></button>
+    </form>
+
+      <div class="todos">
+    {#each todoList as item, index}
+    <span class="todo__text">{item.task}</span>
+    <div class="todo__buttons">
+      <button class="complete" on:click={() => complete(index)}>
+        <Icon name="check-mark" />
+      </button>
+      <button class="delete" on:click={() => remove(index)}>
+        <Icon name="delete" />
+      </button>
+</div>
+    {/each}
+</div>
+ 
+</main>
+
+>>>>>>> 7bcdc2fafcefbf18c6f8c4bcb113178e9e3c26f1
 <style>
     main {
     display: flex;
@@ -122,6 +154,7 @@ button {
 		cursor: pointer;
 	}
 
+<<<<<<< HEAD
   	button.add-todo {
 		width: 2rem;
 		height: 2rem;
@@ -133,6 +166,23 @@ button {
 		margin-left: 1rem;
 		cursor: pointer;
 	}
+=======
+button.delete,
+button.delete:hover {
+  color: brown;
+  transition: color 100ms ease-out;
+}
+
+button.complete,
+button.complete:hover {
+  color: cadetblue;
+  transition: color 100ms ease-out;
+}
+
+.todo.completed {
+  color: slategray;
+}
+>>>>>>> 7bcdc2fafcefbf18c6f8c4bcb113178e9e3c26f1
 
 	button.add-todo span {
 		display: flex;
