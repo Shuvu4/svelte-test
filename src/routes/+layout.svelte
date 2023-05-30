@@ -1,3 +1,4 @@
+<div class="background-up">
 <nav>
   <div class="nav-container">
     <a href="/" class="nav-logo" title="Back to Homepage">Владислава Шведова</a>
@@ -7,24 +8,30 @@
     <a href={link.href} class="link">{link.title}</a>
         {/if}
       {/each}
-      
     </div>
   </div>
 </nav>
+</div>
 
 <div class="container">
     <slot></slot>
   </div>
-  
+
 <style>
-    .container {
-      max-width: 1400px;
-      margin: 50px auto;
-    }
+  .background-up{
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #eee;
+    background: #cd91cf6b;
+    width: 100%;
+  }
+  .container {
+    max-width: 1400px;
+    margin: 50px auto;
+  }
 </style>
   
 <script>
-   const nav = [
+  const nav = [
   {
     title: 'Обо мне',
     href: '/about',
@@ -44,12 +51,7 @@
     title: 'Контакты',
     href: '/contact',
     isShow: true,
-  },
-  {
-    title: 'temp',
-    href: '/temp',
-    isShow: false,
-  },
+  }
 ];
-
+   
 </script>

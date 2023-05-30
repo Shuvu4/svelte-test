@@ -27,6 +27,7 @@
       margin: 50px auto;
       max-width: 800px;
       padding: 0 20px;
+      max-height: 10px;
     }
   
     .blogposts {
@@ -40,6 +41,6 @@
     box-shadow: 0 0 10px #eee;
     }
     .link {
-    color: rgb(10, 10, 139);
+    color: #ad23afaf;
     }
 </style>

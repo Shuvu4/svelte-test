@@ -4,7 +4,7 @@
 </div>
   
 <svelte:head>
-<title>Имя Фамилия</title>
+<title>Владислава Шведова</title>
 </svelte:head>
 
 <div class='container'>
@@ -13,25 +13,23 @@
             <div class='container info-container'>
                 <div class='info-text'>
                     <h1>
-                        <p class='animate-text-1'>Lorem ipsum dolor sit,</p>
-                        <p class='text-2'>Lorem ipsum dolor sit amet.</p>
+                        <p class='animate-text-1'>Привет!</p>
+                        <p class='text-2'>Я начинающий HTML - верстальщик</p>
                     </h1>
                 </div>
                 <h2 class='subtitle'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut, cupiditate dolores
-                    ducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
+                    Имею опыт в вёрстке веб-сайтов, обучаюсь HTML, CSS, JavaScript и Svelte.
+                    
                 </h2>
                 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
                 <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
-                    <a href='/about'>Click Here</a>
-                    <div class='arrow'>→</div>
+                    <a href='/about'>Далее
+                    <div class='arrow'>→</div></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class='background-div'></div>
 
 <style>
     .info {
@@ -69,21 +67,18 @@
         font-weight: 200;
         margin-top: 0.50rem;
     }
-    .background-div {
-        background-color: #ecebe8;
-        width: 100%;
-        height: 56vh;
-        margin: -205px auto;
-    }
+
     .info .info-text {
         position: relative;
     }
+
     .scroll-button {
         display: flex;
         border: none;
         outline: none;
         cursor: pointer;
     }
+    
     .scroll-button .arrow {
         margin-left: 0.50rem;
     }
