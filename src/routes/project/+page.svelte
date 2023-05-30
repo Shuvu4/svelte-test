@@ -37,6 +37,7 @@
      grid-template-columns: 1fr 1fr;
      grid-gap: 20px;
     }
+    
     .app {
    border: 1px solid #ddd;
    padding: 10px;
@@ -44,6 +45,8 @@
   }
 
   .link {
-   color: rgb(10, 10, 139);
+   color: #ad23afaf;
   }
+
+
  </style>

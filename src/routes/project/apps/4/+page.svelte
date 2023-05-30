@@ -61,7 +61,7 @@ label {
 
 input[type='text'] {
   padding: 5px;
-  border: 2px solid #c6bebe;
+  border: 2px solid #ad23afaf;
   border-radius: 5px;
   margin-right: 10px;
   width: 150px;
@@ -78,15 +78,16 @@ td {
   border: 1px solid #c6bebe;
   padding: 10px;
   text-align: left;
+  color: black;
 }
 
 th {
-  background-color: rgb(220, 211, 211) 
+  background-color: #ad23afaf; 
 }
 
 button {
   padding: 5px 20px;
-  background-color: #57ca5b;
+  background-color: #ad23afaf;
   color: white;
   border: none;
   border-radius: 7px;

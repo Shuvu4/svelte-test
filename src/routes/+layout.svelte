@@ -17,6 +17,7 @@
     <slot></slot>
   </div>
 
+
 <style>
   .background-up{
     border: 1px solid #ddd;

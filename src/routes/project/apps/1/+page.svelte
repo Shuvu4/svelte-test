@@ -58,7 +58,6 @@ function complete(index) {
     min-height: 100%;
     padding: 5vmin;
     box-sizing: border-box;
-    background: antiquewhite;
 }
 
 form {

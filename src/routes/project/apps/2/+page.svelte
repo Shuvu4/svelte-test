@@ -2,7 +2,7 @@
 <!-- svelte-ignore a11y-img-redundant-alt -->
 <div class="background">
     <div class="photo">
-        <a href="https://shuvu4.github.io/infoam/">
+        <a href="https://shuvu4.github.io/infoam/" target="_blank">
             <img class="photo" src="/img/logo.svg" alt="photo" width="300"/>
         </a>
         </div>

@@ -23,8 +23,7 @@
                 </h2>
                 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
                 <div style='color:black' class='scroll-button animate-scroll' tabindex='0'>
-                    <a href='/about'>Далее
-                    <div class='arrow'>→</div></a>
+                    <a href='/about'>Далее →</a>
                 </div>
             </div>
         </div>
@@ -77,10 +76,6 @@
         border: none;
         outline: none;
         cursor: pointer;
-    }
-    
-    .scroll-button .arrow {
-        margin-left: 0.50rem;
     }
 </style>
 
