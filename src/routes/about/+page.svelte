@@ -66,8 +66,3 @@
         align-items: start;
     }
 </style>
-
-<<<<<<< HEAD
-=======
-Что-то обо мне
->>>>>>> 7bcdc2fafcefbf18c6f8c4bcb113178e9e3c26f1
